@@ -1,0 +1,12 @@
+CREATE SEQUENCE movies_table_id_seq;
+
+CREATE TABLE movies(
+  id BIGINT primary key default nextval('movies_table_id_seq'),
+    title varchar(255),
+    description varchar(255),
+    releaseDate date,
+    director varchar(255),
+    version INTEGER
+
+
+);
