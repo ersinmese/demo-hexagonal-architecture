@@ -16,9 +16,9 @@ public record MovieEntity(
 
         String description,
 
-        LocalDate releaseDate,
+        LocalDate release,
 
-        String directorName,
+        String director,
 
         @Version
         Integer version

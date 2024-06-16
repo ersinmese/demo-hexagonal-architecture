@@ -33,8 +33,8 @@ public class MoviesDaoAdapter implements MovieDAO {
                             movieEntity.id(),
                             movieEntity.title(),
                             movieEntity.description(),
-                            movieEntity.releaseDate(),
-                            movieEntity.directorName()
+                            movieEntity.release(),
+                            movieEntity.director()
 
                 )).toList();
 
@@ -46,8 +46,8 @@ public class MoviesDaoAdapter implements MovieDAO {
                 null,
                 movie.title(),
                 movie.description(),
-                movie.releaseDate(),
-                movie.directorName(),
+                movie.release(),
+                movie.director(),
                 null
         ));
 
@@ -60,8 +60,8 @@ public class MoviesDaoAdapter implements MovieDAO {
                 newMovie.id(),
                 newMovie.title(),
                 newMovie.description(),
-                newMovie.releaseDate(),
-                newMovie.directorName(),
+                newMovie.release(),
+                newMovie.director(),
                 null
         ));
 
@@ -75,8 +75,8 @@ public class MoviesDaoAdapter implements MovieDAO {
                 oldMovie.id(),
                 oldMovie.title(),
                 oldMovie.description(),
-                oldMovie.releaseDate(),
-                oldMovie.directorName(),
+                oldMovie.release(),
+                oldMovie.director(),
                 null
         ));
 
